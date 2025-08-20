@@ -1,0 +1,2 @@
+# Resolvendo um conflito Git
+
