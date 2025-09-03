@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução de Conflitos Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Blog Git</h1>
+        <p>Aprenda Git e GitHub de forma clara</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Conceitos</a>
+        <a href="fluxo.html">Fluxo Git</a>
+        <a href="conflitos.html" class="active">Conflitos</a>
+    </nav>
+
+    <main>
+        <section class="posts">
+            <!-- Seção: Conflitos -->
+            <div class="post">
+                <h1>Como Resolver Conflitos no Git</h1>
+
+                <h2>O que são conflitos?</h2>
+                <p>Conflitos acontecem quando alterações diferentes são feitas no mesmo trecho de código em branches diferentes e o Git não consegue mesclar automaticamente.</p>
+
+                <h2>Passo 1: Identificar o conflito</h2>
+                <p>Ao tentar fazer merge ou pull, o Git vai indicar arquivos com conflitos. Eles aparecem com marcações como <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> e <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>.</p>
+
+                <h2>Passo 2: Resolver manualmente</h2>
+                <p>Edite os arquivos conflitantes, escolhendo qual alteração manter ou combinando ambas.</p>
+
+                <h2>Passo 3: Adicionar e commitar</h2>
+                <p>Depois de resolver, adicione os arquivos e faça um commit:</p>
+                <pre><code>git add <arquivo>
+git commit -m "fix: resolver conflitos"</code></pre>
+
+                <h2>Passo 4: Continuar o fluxo</h2>
+                <p>Depois de resolver, continue o merge, pull ou rebase normalmente.</p>
+
+                <h2>Dicas para evitar conflitos</h2>
+                <ul>
+                    <li>Atualize sua branch com frequência a partir da develop/main.</li>
+                    <li>Comunique mudanças importantes à equipe.</li>
+                    <li>Faça commits pequenos e frequentes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h3>Sobre o Blog</h3>
+                <p><!-- Info do blog/autor aqui --></p>
+            </div>
+            <div class="card">
+                <h3>Categorias</h3>
+                <p><!-- Categorias ou tags aqui --></p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        &copy; 2025 Meu Blog Git
+    </footer>
+</body>
+</html>
