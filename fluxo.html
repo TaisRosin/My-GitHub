@@ -8,17 +8,15 @@
 </head>
 <body>
     <header>
-    <div class="container">
-        <h1><span>GIT</span>BLOG</h1>
-        <div class="pages">
-            <a class="btn-conceitos" href="index.html">Conceitos</a>
-            <a class="btn-fluxo" href="fluxo.html">Fluxo Git</a>
-            <a class="btn-conflitos" href="conflitos.html">Conflitos</a>
+        <div class="container">
+            <h1><span>GIT</span>BLOG</h1>
+            <div class="pages">
+                <a class="btn-conceitos" href="index.html">Conceitos</a>
+                <a class="btn-fluxo" href="fluxo.html">Fluxo Git</a>
+                <a class="btn-conflitos" href="conflitos.html">Conflitos</a>
+            </div>
         </div>
-    </div>
-</header>
-
-
+    </header>
 
     <main>
         <section class="posts" id="fluxo">
@@ -26,40 +24,40 @@
             <div class="post">
                 <h1>Fluxo do Git e GitHub</h1>
 
-                <h2>1. Criação de branch</h2>
-                <p>Para iniciar uma nova feature, criamos uma branch a partir da branch principal (geralmente develop ou main).</p>
+                <pre><code>git init</code></pre>
+                <p>Inicializa um repositório vazio, para início dos trabalhos</p>
 
-                <h2>2. Trabalhando na branch</h2>
-                <p>Fazemos commits frequentes com mensagens claras, seguindo boas práticas de commits semânticos.</p>
+                <pre><code>git clone 'url'</code></pre>
+                <p>Criará um repositório remoto do GitHub</p>
 
-                <h2>3. Atualizando a branch</h2>
-                <p>Antes de finalizar, atualizamos nossa branch com as últimas alterações da develop para evitar conflitos.</p>
+                <pre><code>git remote</code></pre>
+                <p>Mostra a URL do servidor onde o projeto está salvo</p>
 
-                <h2>4. Pull Request</h2>
-                <p>Quando a feature estiver pronta, abrimos um Pull Request para integrar nossa branch de feature na develop.</p>
+                <pre><code>git status</code></pre>
+                <p>Mostra status do trabalho, se possui atualização não salvas, por exemplo.</p>
 
-                <h2>5. Revisão e Merge</h2>
-                <p>A equipe revisa o código, aprova o PR e realiza o merge, integrando a nova funcionalidade ao projeto.</p>
+                <pre><code>git checkout -b 'branch'</code></pre>
+                <p>Cria uma nova branch e já vai direto pra ela</p>
 
-                <h2>6. Deleção da branch</h2>
-                <p>Após o merge, a branch de feature pode ser deletada tanto local quanto remotamente, mantendo o repositório limpo.</p>
+                <pre><code>git checkout 'branch'</code></pre>
+                <p>Vai pra essa branch já criada</p>
+
+                <pre><code>git add .</code></pre>
+                <p>Adiciona os arquivos e mudanças novas para o stage</p>
+
+                <pre><code>git commit -m 'msg'</code></pre>
+                <p>Registra uma mensagem de histórico das alterações</p>
+
+                <pre><code>git push</code></pre>
+                <p>Envia os commits ao GitHub</p>
+
+                <pre><code>git pull</code></pre>
+                <p>Sincroniza mudanças realizadas em outros dispositivos que estejam no GitHub</p>
+
+                <pre><code>git merge</code></pre>
+                <p>Mescla branches</p>
             </div>
         </section>
-
-        <aside class="sidebar">
-            <div class="card">
-                <h3>Sobre o Blog</h3>
-                <p><!-- Info do blog/autor aqui --></p>
-            </div>
-            <div class="card">
-                <h3>Categorias</h3>
-                <p><!-- Categorias ou tags aqui --></p>
-            </div>
-        </aside>
     </main>
-
-    <footer>
-        &copy; 2025 Meu Blog Git
-    </footer>
 </body>
 </html>
