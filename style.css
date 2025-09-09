@@ -2,58 +2,79 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body {
-    background-color: #f0f2f5;
-    color: #333;
-    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    background-color: #fff;
+    color: #ededed;
 }
-
+.container{
+    margin: 0 auto;
+    max-width: 1140px;
+}
 /* Header */
 header {
-    background-color: #0078d7;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+    background-color: #1c1c1c;
+    padding: 1rem 2rem;
 }
-
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-header p {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-/* Navigation */
-nav {
-    background-color: #fff;
+header .container {
     display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex-direction: d;
+    align-items: center;
+    justify-content: space-between;
 }
-
-nav a {
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    
+}
+header h1 span {
+    font-weight: 400;
+}
+header.pages {
+    display: flex;
+    gap: 1rem;
+}
+header .pages .btn-conceitos {
+    color: #fff;
     text-decoration: none;
-    color: #0078d7;
-    margin: 0 20px;
-    font-weight: 600;
-    padding: 5px 0;
-    position: relative;
-    transition: color 0.3s;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
-
-nav a:hover,
-nav a.active {
-    color: #005a9e;
+header .pages .btn-conceitos:hover {
+    background-color: #333;
 }
-
+header .pages .btn-fluxo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+header .pages .btn-fluxo:hover {
+    background-color: #333;
+}
+header .pages .btn-conflitos {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+header .pages .btn-conflitos:hover {
+    background-color: #333;
+}
 /* Main Blog Layout */
 main {
     max-width: 1000px;
@@ -63,58 +84,31 @@ main {
     grid-template-columns: 2fr 1fr;
     gap: 30px;
 }
-
 /* Posts */
-.post {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-}
 
-.post h2 {
-    color: #0078d7;
+
+.post h1 {
+    color: #1c1c1c;
     margin-bottom: 15px;
+    font-size: 3rem;
 }
-
+.post h2 {
+    color: #1c1c1c;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+.post h3 {
+    color: #1c1c1c;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
 .post p {
+    color: #1c1c1c;
     font-size: 1rem;
     line-height: 1.6;
 }
-
-/* Sidebar */
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.sidebar .card {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-    color: #555;
-    background-color: #fff;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
+.post li {
+    color: #1c1c1c;
+    font-size: 1rem;
+    line-height: 1.6;
 }
